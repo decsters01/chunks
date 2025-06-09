@@ -1,0 +1,15 @@
+processing:
+  input_directory: '.'
+  output_directory: 'documents'
+  ignored_directories: ['.git', 'node_modules', '__pycache__', 'documents']
+  max_recursion_depth: 5
+  max_markdown_files: 10  # Configura o número máximo de arquivos markdown gerados
+chunking:
+  chunk_size: 1500
+  chunk_overlap: 250
+  min_chunk_lines: 7
+summarizer:
+  model_name: 't5-small'
+  max_input_chars: 50000
+ocr:
+  tesseract_cmd_path: null

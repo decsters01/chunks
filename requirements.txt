@@ -1,0 +1,13 @@
+langchain
+pypdf
+python-docx
+pytesseract
+Pillow
+PyYAML
+click
+tqdm
+spacy
+transformers
+torch
+accelerate
+bitsandbytes
