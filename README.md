@@ -35,3 +35,31 @@ src/
 python main.py --input-dir [diretório_entrada] --output-dir [diretório_saída]
 ```
 [Ver Tutorial Completo](TUTORIAL.md) | [Referência Técnica](REFERENCIA.md)
+
+## Embeddings via Chutes API
+
+Crie a variável de ambiente com o seu token:
+
+```bash
+export CHUTES_API_TOKEN="seu_token_aqui"
+```
+
+Use a CLI para gerar embeddings de um texto único:
+
+```bash
+python embeddings.py --text "exemplo de texto"
+```
+
+Ou de múltiplos textos:
+
+```bash
+python embeddings.py --text "texto 1" --text "texto 2"
+```
+
+Ou lendo linha a linha de um arquivo e salvando a saída:
+
+```bash
+python embeddings.py --input-file frases.txt --output-file saida.json
+```
+
+Você também pode customizar `--api-url`, `--timeout`, `--max-retries` e `--backoff` se necessário.
